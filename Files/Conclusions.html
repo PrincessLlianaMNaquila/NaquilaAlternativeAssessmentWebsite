@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Conclusions</title>
     <style>
         body {
             font-family: Georgia, serif;
-            background-color: rgb(255, 255, 255); 
+            background-color: lightblue;
             padding: 20px;
+            margin: 0;
+        }
+
+        .content-container {
+            background-color: white;
+            border-radius: 10px;
+            max-width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
@@ -17,26 +27,20 @@
             margin-bottom: 30px;
         }
 
-        h2 {
-            text-align: left;
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-
-        .content-container {
+        .content-flex {
             display: flex;
-            align-items: flex-start;
             gap: 20px;
+            align-items: flex-start;
+            flex-wrap: wrap;
         }
 
-        .content-container img {
+        img {
             max-width: 50%;
-            height: auto;
             border-radius: 8px;
             border: 1px solid #ccc;
         }
 
-        .content-container .text-content {
+        .text-content {
             max-width: 50%;
         }
 
@@ -47,47 +51,43 @@
         }
 
         a {
-            display: block;
-            text-align: center;
-            margin-top: 50px;
+            display: inline-block;
             color: #0000EE;
+            margin-top: 50px;
             text-decoration: none;
+            padding: 8px 16px;
+            border: 1px solid #0000EE;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-align: center;
         }
 
         a:hover {
-            text-decoration: underline;
-        }
-
-        .caption {
-            font-size: 0.8em;
-            text-align: center;
-            margin-top: 5px;
-            color: #555;
+            background-color: #0000EE;
+            color: white;
         }
     </style>
 </head>
 <body>
 
-    <h1>Conclusions</h1>
-    
     <div class="content-container">
-        <img src="images/conclusionspic.png" alt="About Us">
-        <div class="text-content">
-            <p>
-                A child’s destiny should not be determined by the neighborhood a child lives in, the composition of the child’s family, or the child’s circumstances. Every child should be given the same equal opportunity to achieve excellence. Teachers should view every child as a child that is capable of learning. The responsibility of instilling the value of learning is placed not only on the parents, but the teachers, administrators, school board officials, and every other adult that has a part in a child’s life.
+        <h1>Conclusions</h1>
+        
+        <div class="content-flex">
+            <img src="images/conclusionspic.png" alt="Conclusions Image">
+            <div class="text-content">
+                <p>
+                    A child’s potential should not depend on their neighborhood or family circumstances. Every child deserves equal opportunities to excel. The joint responsibility of parents, teachers, and community leaders is crucial in fostering a supportive learning environment.
+                </p>
+                <p>
+                    Schools today prioritize open communication, leveraging technology to connect with parents. This collaboration benefits children by ensuring they receive the support needed for success.
+                </p>
+            </div>
+        </div>
 
-Communication is key when meeting the needs of all learners. Today’s school systems are finding a variety of ways to improve communication between parents and their schools. 
-   
-	    </p>
-	     
-	    <p>
-		Schools are improving parental information of how their child develops. Schools are giving information about the developmental processes and the expectations of the child, according to grade level, through the literature available to all parents. Schools are keeping lines of communication open. They are making teachers available and more accessible along with incorporating technology, which enables easier access for parents to communicate with their schools and encouraging parent involvement with an abundance of programs for parents to become involved. Every child benefits when there is an established and comfortable line of communication between parents and the school.
-            </p>
-         </div>
+        <a href="buildingbridges.html">Back to Home</a>
     </div>
-    
-
-    <a href="buildingbridges.html">Back to Home</a>
 
 </body>
 </html>
+
