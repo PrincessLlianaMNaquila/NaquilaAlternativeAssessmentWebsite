@@ -7,9 +7,24 @@
     <style>
         body {
             font-family: Georgia, serif;
-            background-color: rgb(255, 255, 255); 
+            background-color: lightblue;
             padding: 20px;
+            margin: 0;
         }
+
+        .content-container {
+            background-color: white;
+            border-radius: 10px;
+            max-width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+	header, section{
+	    text-aligh:center;
+	    margin-bottom:20px;
+	}
 
         h1 {
             text-align: center;
@@ -18,74 +33,70 @@
         }
 
         h2 {
-            text-align: left;
             font-size: 2em;
             margin-bottom: 20px;
         }
 
-        .content-container {
+        .content-flex {
             display: flex;
+	    gap: 20px;
             align-items: flex-start;
-            gap: 20px;
+            flex-wrap:wrap;
         }
 
-        .content-container img {
+        img {
             max-width: 50%;
-            height: auto;
             border-radius: 8px;
             border: 1px solid #ccc;
         }
 
-        .content-container .text-content {
+        .text-content {
             max-width: 50%;
         }
 
         p {
             font-size: 1.2em;
             line-height: 1.6;
-            margin-bottom: 20px;
+
         }
 
         a {
-            display: block;
-            text-align: center;
-            margin-top: 50px;
-            color: #0000EE;
-            text-decoration: none;
+            display: inline-block;
+	    color: #0000EE;
+	    margin-top: 50px;
+	    text-decoration: none;
+            padding: 20 px 30px;
+	    border: 1px solid #0000EE;
+	    border-radius: 5px;
+	    transition: background-color 0.3s ease;
         }
 
         a:hover {
-            text-decoration: underline;
-        }
-
-        .caption {
-            font-size: 0.8em;
-            text-align: center;
-            margin-top: 5px;
-            color: #555;
+            background-color: #0000EE;
+	    color: white;
         }
     </style>
 </head>
 <body>
 
-    <h1>Solutions</h1>
-    
-    <h2>Solutions to provide about Education</h2>
-    
     <div class="content-container">
-        <img src="images/solutionspic.png" alt="About Us">
-        <div class="text-content">
-	    <p>
-		Although the research and statistics about the impact of social issues on a child’s education can be overwhelming, the role of communication can help. It is hard to believe that we have a breakdown in communication on any level in today’s world. We have the ability to be connected 24 hours a day seven days a week. Cell phones, pagers, and the Internet are all devices we use daily to stay connected, so it is not surprising that the communications between the families and the schools the children attend are in sync more than ever.
-	    </p> 
-            <p>
-		There is a real effort to include families into the school environment, and in some ways, the programs the schools have for our children could not take place without the effort of the parents and guardians. Communication with our children’s teachers is right at our fingertips, but without getting the information out to parents on how to access this information, it is a resource that is wasted.
-            </p>
+        <h1>Solutions</h1>
+        
+        <h2>Solutions for Education</h2>
+        <div class="content-flex">
+            <img src="images/solutionspic.png" alt="Solutions in Education">
+            <div class="text-content">
+                <p>
+                    Although research and statistics about the impact of social issues on education can be overwhelming, communication plays a vital role. Modern technology enables us to connect 24/7, fostering strong links between families and schools.
+                </p>
+                <p>
+                    Schools are working hard to involve parents in the educational process. Through accessible communication tools, teachers can share essential information, ensuring no resources are wasted.
+                </p>
+            </div>
         </div>
-    </div>
-    
 
-    <a href="buildingbridges.html">Back to Home</a>
+        <a href="buildingbridges.html">Back to Home</a>
+    </div>
 
 </body>
 </html>
