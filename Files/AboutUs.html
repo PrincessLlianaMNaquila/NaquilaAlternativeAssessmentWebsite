@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <style>
-      
         body {
             font-family: Georgia, serif;
             background-color: lightblue;
@@ -14,7 +14,6 @@
             line-height: 1.8;
         }
 
-       
         .content-container {
             background-color: white;
             max-width: 800px;
@@ -25,7 +24,6 @@
             overflow: hidden;
         }
 
-       
         header, section, footer {
             text-align: center;
             margin-bottom: 20px;
@@ -42,12 +40,23 @@
             margin: 0 20px 20px 0;
             border-radius: 8px;
             border: 1px solid #ccc;
+            animation: translateImage 2s ease-in-out infinite alternate;
+        }
+
+        /* Keyframes for translation animation */
+        @keyframes translateImage {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(20px, 20px); /* Move 20px right and 20px down */
+            }
         }
 
         p {
             font-size: 1.2em;
             margin: 15px 0;
-	    text-align: left;
+            text-align: left;
         }
 
         .caption {
@@ -57,7 +66,6 @@
             text-align: center;
         }
 
-    
         a {
             display: inline-block;
             margin-top: 30px;
@@ -75,8 +83,8 @@
         }
     </style>
 </head>
-<body>
 
+<body>
     <header>
         <h1>About Us</h1>
         <h2>How Do Social Issues Affect Students?</h2>
@@ -86,7 +94,6 @@
         <section>
             <img src="images/picaboutus.png" alt="About Us">
             <div class="caption">“Children” by aka Quique is licensed under CC BY-NC-ND 2.0</div>
-            
             <p>
                 In a recent population survey, 7.1 million students under the age of 18 lived in a neighborhood with a poverty rate of 30 percent or more. 
                 This high incidence of poverty places these children at a higher rate of becoming ill, not having proper health care, becoming parents before 
@@ -99,11 +106,11 @@
             </p>
         </section>
         
-        <footer>
+        <footer> 
             <a href="buildingbridges.html">Back to Home</a>
-        </footer>
+        </footer> 
     </div>
-
 </body>
+
 </html>
 
