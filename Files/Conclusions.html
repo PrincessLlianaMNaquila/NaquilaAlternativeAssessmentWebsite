@@ -10,6 +10,9 @@
             background-color: lightblue;
             padding: 20px;
             margin: 0;
+            background-image: url("images/content-bg.jpg"); 
+            background-size: cover; 
+            background-clip: content-box;
         }
 
         .content-container {
@@ -19,6 +22,7 @@
             margin: 0 auto;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-origin: padding-box; 
         }
 
         h1 {
@@ -38,6 +42,11 @@
             max-width: 50%;
             border-radius: 8px;
             border: 1px solid #ccc;
+            transition: transform 0.3s ease; 
+        }
+
+        img:hover {
+            transform: scale(1.05); 
         }
 
         .text-content {
