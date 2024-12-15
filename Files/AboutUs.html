@@ -12,6 +12,9 @@
             padding: 20px;
             margin: 0;
             line-height: 1.8;
+            background-image: url("images/content-bg.jpg"); 
+            background-size: cover; 
+            background-clip: content-box; 
         }
 
         .content-container {
@@ -22,6 +25,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             overflow: hidden;
+            background-origin: padding-box;
         }
 
         header, section, footer {
@@ -43,13 +47,12 @@
             animation: translateImage 2s ease-in-out infinite alternate;
         }
 
-        /* Keyframes for translation animation */
         @keyframes translateImage {
             0% {
                 transform: translate(0, 0);
             }
             100% {
-                transform: translate(20px, 20px); /* Move 20px right and 20px down */
+                transform: translate(20px, 20px); 
             }
         }
 
